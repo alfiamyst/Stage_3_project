@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+  <HTML>
+    <head>
+      <title> Alfia's notes - Telling computers what to do</title>
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+       <meta charset="utf-8"/>
+    </head>
+	<body>
+		<div class="large_box">
+			<div class="large_title">
+			<h1>Add videos to your page</h1>
+			</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 1 Hignlights</h2>
+				<br><a href="#AD"><b>I. Abstraction Definition</b></a><br>
+				<br><a href="#PSL"><b>II. Python Standard Library</b></a><br>
+				<br><a href="#EX"><b>III. Examples of the standard modules from Python library</b></a><br>
+				<br><a href="#WRC"><b> IV.  Writing a readable code.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 1 Notes - Introduction to Abstraction </h2>
+					<h3 ID="AD"> I. Abstraction definition</h3>
+						<p> According to <a href="http://en.wikipedia.org/wiki/Abstraction_(computer_science)"> Wiki</a>, abstraction in Computer Science, is a technique for managing complexity of computer systems. It works by establishing a level of complexity on which a person interacts with the system, suppressing the more complex details below the current level. The programmer works with an idealized interface (usually well defined) and can add additional levels of functionality that would otherwise be too complex to handle. In other words, "The essence of abstractions is preserving information that is relevant in a given context, and forgetting information that is irrelevant in that context."– John V. Guttag (Guttag, John V. (2013-01-18). Introduction to Computation and Programming Using Python (Spring 2013 edition ed.). Cambridge, Massachusetts: The MIT Press. ISBN 9780262519632.)</p>
+						<p>I understand it this way - in order to drive a car, we need to know how to operate it and the rules of the road, but we do not necessarily need to know the inner workings of the car.
+						</p>
+					<h3 ID="PSL"> II. Python Standard Library</h3>
+						<p>Python has a standard library, which comes with it when you download the Python program. In this library, there are different modules, which contain pre-defined functions. The power of abstraction comes to play here, since we do not need to understand how exactly these funtions work, we can just use them. It is useful to look through <a href ="https://docs.python.org/2.7/library"> the Python standard library documentation </a> to see what is available for us to use in our programs. </p>
+
+						
+						<h3 ID="EX"> III. Examples of the standard modules from Python library</h3>
+
+						<p>To be able to use the functions from the library, we need to import the relevant modules, using the "import" command.</p>
+
+						<p>import webbrowser <br>
+						(imports the webbrowser module)<br>
+						webbrowser.open(httb://www.cnn.com")<br>
+						(this opens a default webbrowser and the indicated link)</p>
+
+						<p>import time <br>
+						time.ctime() <br>
+						(displays a current time)<br>
+						time.sleep(10)<br>
+						(suspends a program for a number of seconds (indicated in parenthesis)) </p>
+
+						<p>import os <br>
+						os.listdir(r"path")<br>
+						(displays a list of files from a given path. "r" indicates raw path, or a path as it is)<br>
+						os.rename (old name, new name)<br>
+						string.translate(table, list of characters to remove)<br>
+						(this one is not necessarily comes from os module, but it works well for the task of renaming files. "table" translates one set of characters into another set of characters. In not necessary, have "None" there. the second argument removes specified characters from the string. For example, we can indicate "0123456789" to remove all the numbers from a string )
+						os.getcwd()
+						(displays current working directory)
+						os.chdir(r"path")
+						(changes current working directory)
+
+
+			        <h3 ID="WC"> IV.  Writing a readable code.</h3>
+			        <ol>
+			        
+						<li>	<b> What is a variable?</b></li>
+							 A variable can be assigned a name via an assignment statement:<br>
+									<p style=justified:center>name = expression</p>
+									
+						<br>
+						<li>	<b>What does it mean to assign a value to a variable?</b></li>
+						Assigning value to a variable is putting the value in a memory cell that has a name on it.<br>
+						<br>
+						<li>	<b>What is the difference between what the equals = means in math versus in programming.</b> What's the difference between this: 2 + 3 = 5 and this: my_variable = 5?</li>
+					</ol>
+			</div>
+		</div>
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 2 Hignlights</h2>
+				<br><a href="#var"><b>I. Variables</b></a><br>
+				<br><a href="#str"><b>II. Strings</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 2 Notes - Variables and Strings</h2>
+					<h3 ID="var"> I. Variables  </h3>
+						<p>Values can be assigned to variables, using a <span class="code"> = </span> sign. This eauals sign is different from an arithmetic equals sign, which is Python actually looks like this: <span class="code"> == </span>. For example, the difference between the equals sign means in <span class="code">2 + 3 = 5</span> and <span class="code">my_variable = 5</span> is:
+				        <p>
+				          Here <span class="code">2 + 3 = 5</span>, the equals sign means "is the same as".
+				        </p>
+				        <p>
+				          And here <span class="code">my_variable = 5</span>, the equals sign means "is assigned the value of".
+				        </p>
+
+						<p>Variables are a convenient way to store data, they are helpful in remembering where the data are stored (when using mnemonic variable names), and they help to save time when data are operated on.</p>
+						<br>The values assigned to the variables can be:</p>
+							<ul>
+								<li> Strings (a sequence of characters in either single or double quotes, but not mixed). For example, <span class="code">"3"</span> and <span class="code">"3"</span> are strings, so <span class="code">"3"+"3"</span> will result in <span class="code">33</span></li><br>
+								<li> Integers (round numbers). For example, <span class="code">3</span> and <span class="code">3</span> are integers, so <span class="code">3+3</span> will result in <span class="code">6</span></li><br>
+								<li> Floats (numbers with decimal points).For example, <span class="code">3.0</span> is a float, <span class="code">3</span> is an integer, so <span class="code">3.0+3</span> will result in <span class="code">6.0</span>. If one of the variables is a float, the result of an arithmetic operation will be a float.</li>
+							</ul>
+							
+						<p> Using variables is a way to name values. There are several name rules in Python:</p>
+							<ul>
+								<li>You can use any letter</li> 
+								<li>You can use the special characters “_"</li> 
+								<li>You can use any number, provided you do not start with it.</li>  
+								<li>White spaces and signs with special meanings in Python, as “+” and “-” are not allowed.</li> 
+								<li>Python variable names are case-sensitive</li> 
+								<li>A convention is not to start a variable name with a capital charachter (even though this is not a hard rule)</li>
+							</ul>
+					<h3 ID="str"> II. Strings </h3>
+						<p>There is a reason for the strings to have either double or single quotes. Sometimes a meaningful text withing the string can have double quotes: <span class="code">variable='Print"Hello"'</span>. In this case, single quotes are appropriate. The string can also have a single quote within: <span class="code">variable2="It's a nice day!"</span> - in this case double quotes can be used. 
+						In addition, triple quotes can be used for creating multi-line strings:</p> 
+						<span class="code">print """I am a string<br> 
+						that takes up <br>
+						multiple lines"""<br>
+
+						print '''I am also a string<br>
+						that makes up multiple lines!'''<br> </span>
+						
+							<ul>
+								<li> Strings can be operated on. For example an <u>operator</u> "+" will <b>concatenate</b> two or more strings (just paste them one after another). Or "*" will multiply a string (for example name="5"*4, print name will give 5555).</li><br>
+								<li>Strings can also be indexed, which means we can extract a part of the sequence of the characters. For example string variable ="udacity", variable[0] will return "u", variable[1+1] will return "a" etc. The index value can be a negative one, where -1 is the last character, -2 is the one before the last, etc.</li><br>										
+								<li> Selecting subsequences of strings -  instead of having just one number is square brackets, we can have two, separated by a colon. The first number will indicate a start, and the second - a stop indices. The returned value will be a string between these numbers, including the start, and not including the stop number. Leaving an empty space instead of the stop number will include all the charachters from the start to the end. Inversley, leaving out the start number, the selection will include all the characters from the beginning to the stop.</li><br>
+								<li>Using a "find" method in strings.
+								<img class="screenshot" src="images/findmethod.jpg" alt = "find method"> 
+								A <b>method</b> is a built-in procedure, provided by Python. 
+								When using the .find method, the output is the first number of the search string. If the search string is not found, the output will be -1. To make .find even more powerful, we can add a second "parameter". A <b>parameter</b> is what goes inside the parentheses. In this code: "text".find("t") the "t" is a parameter; in "text".find("t", 1) there are two parameters, "t" and 1. The second parameter (a number) indicates a position in the string, <u>after</u> which the .find will look for a search string </li><br>
+							</ul>				
+			</div>	
+		</div>
+		
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 3 Highlights </h2>
+				<br><a href="#FD"><b>I. Function Definition</b></a><br>
+				<br><a href="#MUF"><b>II. Making and Using Functions</b></a><br>
+				<br><a href="#SF"><b> III. Summary of the functions lesson.</b></a><br>
+				<br><a href="#AHP"><b> IV. Automate HTML using Python.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+				<h2>Lesson 3 Notes - Input -> Function -> Outputs</h2>
+					<h3 ID="FD"> I. Function definition</h3>
+						<p>	A <b>function</b> or a <b>procedure</b> is a sequence of actions. A function has a <u>name</u> (type), by which one can "call" the function later.  A function also has an expression in parenthesis, which is called the <u>parameters</u> (or argument) of the function. The argument is  an <u>input </u> to the function, an it can be either a value, a variable, or another function. 
+						It is common to say that a function “takes” an argument and “returns” a result. The result is called the <u>return value</u>.
+						Note that a function does not change the value of the used variable, but creates a changed copy of it. So it is important to use a <u> return</u> of the changed value in order not to lose it.
+						</p>
+						<p>Functions are very useful tools that allow programmers avoid repetitions and write efficient code.</p>
+				
+					<h3 ID="MUF"> II. Making and Using Functions.</h3>
+						<p>	To make a function, one starts with <span class="code">def</span>, followed by the name of the function (use mnemonic names, avoid reserved names) and parameters of the function in parenthesis. When the function is called (used), the parameters are replaced by actual values.
+						</p>
+						<p>	As an example, to create a function that calculates the conversion of inches to cantimeters, we would do the following: </p>
+								
+						<span class="code">def conver(inch):</span>
+    						<p style=text-indent:50px;><span class="code"> cm=inch*2.54</span><p>
+   							<p style=text-indent:50px;><span class="code">return cm</span></p>
+						<p> To call a function, write the name with the value in parentheses.</p> 
+							<p style=text-indent:10px;><span class="code"> print conver(4.0)<br>
+							>>>>10.16</span><p>
+					<h3 ID="SF"> III. Summary of the functions lesson</h3>
+						 To summurize:
+
+						 <p><b>On the first line of your function definition.</b></p>
+						 <ul>
+							<li>You must begin the line with def (lowercase).</li>
+							<li>After def you must give a function name (in this case it will be udacify.</li>
+							<li>Next, you must have a set of parentheses with the required parameters inside.</li>
+							<li>The line must end with a : colon.</li>
+						</ul>
+						<p><b>In the body of the function</b></p>
+						<ul>
+							<li>Every line in the function must be indented.</li>
+							<li>If you want your function to produce output, it must end with a return statement.</li>
+						</ul>
+
+						<p><b>To call a function:</b></p>
+						<ul>
+							<li>The function name,</li> 
+							<li>followed by...an open paren (, </li>
+							<li>followed by...the values for the required parameters, </li>
+							<li>followed by...</li>
+							<li>...a closed paren ).
+							<li>To display the results of a function call use print command.</li>
+						</ul>
+					<h3 ID="AHP"> IV. Automate HTML using Python</h3>
+						<img class="screenshot" src="http://i.imgur.com/FF6GuIR.png" alt = "example of HTML-generating Python code">	
+			</div>
+		</div>	
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 4 Hignlights</h2>
+				<br><a href="#MD>"<b>I. Making decisions.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 4 Notes - Decisions and Repetitions - 'if' and 'while'.</h2>
+					<h3 ID="MD"> I. Making decisions.</h3>
+						
+						<p><b>Comparison operators</b>, such as less than, more than, less or equal, more or equal,  == (equal), != not equal to, work on numbers. The output is not a number, but a Boolean value, which can be ether "True" or "False". </p>
+
+						<img class=screenshot src="images/comparison.jpg" alt = "example of comparison operators in Python">
+											
+			</div>	
+		</div>	
+		<div class="large_box">
+			<div class="lesson_highlights">
+				<h2>Lesson 5 Hignlights</h2>
+				<br><a href="#SvsL"><b>I. Differences and similarities between strings and lists.</b></a><br>
+				<br><a href="#Mut"><b>II. Mutation.</b></a><br>
+				<br><a href="#Ali"><b>III. Aliasing.</b></a><br>
+				<br><a href="#OLO"><b>IV. Other list operations.</b></a><br>
+				<br><a href="#LOL"><b>V. Loops on lists.</b></a><br>
+			</div>
+			<div class="lesson_notes">
+					
+	          <h2>Lesson 5 Structured Data</h2>
+					<h3 ID="SvsL"> I. Differences and similarities between strings and lists.</h3>
+						<p>Strings and lists are similar, though lists are more poweful. Here are where they are similar and different:</p>
+						<ul>
+							<li> Both are sequences, though a String is a sequence of characters, while list is a sequence of anything, including strings and other lists.</li>
+							<li> Both can be assigned to a variable; string - in quotes, list - in square brackets.</li>
+							<li> Sub-sequences of both can be accessed using an index in square brackets. They return strings and lists, corresponding to the origin</li>
+						</ul>
+						<img class=screenshot src="images/strings_and_lists.jpg" alt = "Differences and similarities between strings and lists">
+						<p> The general grammar for creation of a list is to have a name for a list, assignment sign, square brackets, and the expressions of the list, separated by a comma.</p>
+					<h3 ID="Mut"> II. Mutation.</h3>
+						<p>Lists support mutation, while strings do not(they are "immutable"). When we concotinate strings, this does not modify an existing string, but creates a brand new one. Mutation allows to change a selected expression within a list, without creating a new one:</p>	
+						<img class="screenshot" src="images/mutation.jpg"	alt="example of mutation">	
+					<h3 ID="Ali"> III. Aliasing.</h3>
+						<p>When we refer to the same object using different ways, it is called aliasing. For example, we have a variable 'p' that is assigned to a list. If then we assign a variable 'q' to the variable 'p', whatever we do with the list will be reflected in both p and q. However, if we assign p to a new object, the value of q will remain the same, as before.</p>	
+					<h3 ID="OLO"> IV. Other list operations.</h3>
+						<h4>Append</h4>	
+							<p>Append is like a procedure, but it is a method. It mutates the list after execution. </p>
+							<img class="screenshot" src="images/append.jpg" alt="Example of how append works">
+						<h4>Plus (+) operator</h4>	
+							<p>Plus works similar to concotination operation of strings. It produces a new list after execution, and it does not mutate any of the input lists. </p>
+							<img class="screenshot" src="images/plus.jpg" alt="Example of how a plus works">
+						<h4>Length (len) operator</h4>
+							<p>len operator works on any object that is a collection of things, such as strings and lists.</p>
+						<h4>Index and in on lists</h4>
+						    <img class="screenshot" src="images/index_and_in.jpg" alt="index and in on loops">
+							<img class="screenshot" src="images/len.jpg" alt="how len works">
+					<h3 ID="LON"> V. Loops on lists.</h3>
+						<h4>While on lists.</h4>
+							<p> While works on lists the same way as on strings. We have a test statement in the block, which will return the the while until the test is no longer true: </p>
+							<img class="screenshot" src="images/while.jpg" alt= "While on Loops">
+						<h4>For on lists.</h4>
+							<p> For in loop on lists goes through each element of the list ('name' introduces a new variable for the list expressions), performing an action, specified in a block of the loop:</p>
+							<img class="screenshot" src="images/for-in.jpg" alt="For on loops">
+
+ 						<a href="Page3.html"> to stage 3 </a>
+			</div>	
+		</div>	
+	</body>
+  </HTML>
